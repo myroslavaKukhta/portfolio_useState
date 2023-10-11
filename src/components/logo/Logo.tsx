@@ -1,13 +1,11 @@
 import React from 'react';
+import {Icon} from "../icon/Icon";
 
 export const Logo = () => {
   return (
-    <div>
       <a href="">
-        <img src="" alt=""/>
+        <Icon iconId={'code'}/>
       </a>
-    </div>
   );
 };
 
-export default Logo;
