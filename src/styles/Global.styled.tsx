@@ -1,5 +1,6 @@
 import React from 'react';
 import {createGlobalStyle} from "styled-components";
+import {theme} from "./Theme";
 
 export const GlobalStyled = createGlobalStyle`
   *,
@@ -17,6 +18,7 @@ export const GlobalStyled = createGlobalStyle`
     sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    color: ${theme.colors.font};
   }
 
   code {
@@ -35,5 +37,13 @@ export const GlobalStyled = createGlobalStyle`
   button {
     background-color: unset;
     border: none;
+  }
+  
+  section:nth-of-type(odd) {
+    background-color: ${theme.colors.primaryBg};
+  }
+
+  section:nth-of-type(even) {
+    background-color: ${theme.colors.secondaryBg};
   }
 `
