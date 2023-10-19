@@ -19,6 +19,7 @@ export const GlobalStyled = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: ${theme.colors.font};
+    line-height: 1.2;
   }
 
   code {
@@ -37,6 +38,10 @@ export const GlobalStyled = createGlobalStyle`
   button {
     background-color: unset;
     border: none;
+  }
+  
+  section {
+    padding: 100px 0;
   }
   
   section:nth-of-type(odd) {

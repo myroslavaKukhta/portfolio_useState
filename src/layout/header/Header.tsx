@@ -23,7 +23,7 @@ export const Header = () => {
 };
 
 const StyledHeader = styled.header`
-  // background-color: ${theme.colors.primaryBg};
+    // background-color: ${theme.colors.primaryBg};
   padding: 20px 0;
   position: fixed;
   top: 0;
