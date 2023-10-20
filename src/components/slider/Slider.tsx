@@ -52,7 +52,7 @@ const Pagination = styled.span`
     display: inline-block;
     width: 7px;
     height: 7px;
-    background-color: ${theme.colors.accent};
+    background-color: ${theme.colors.border};
     border-radius: 20px;
     
     & + span {
@@ -60,7 +60,7 @@ const Pagination = styled.span`
     }
     
     &.active {
-      background-color: ${theme.colors.font};
+      background-color: ${theme.colors.accent};
       width: 20px;
     }
   }

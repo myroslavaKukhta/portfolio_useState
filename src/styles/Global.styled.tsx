@@ -10,7 +10,7 @@ export const GlobalStyled = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
   }
-  
+
   body {
     margin: 0;
     font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -26,27 +26,28 @@ export const GlobalStyled = createGlobalStyle`
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
   }
-  
+
   a {
     text-decoration: none;
     color: ${theme.colors.font};
+    cursor: pointer;
   }
-  
+
   ul {
     list-style: none;
   }
-  
+
   button {
     background-color: unset;
     border: none;
     cursor: pointer;
     color: ${theme.colors.font};
   }
-  
+
   section {
     padding: 100px 0;
   }
-  
+
   section:nth-of-type(odd) {
     background-color: ${theme.colors.primaryBg};
   }
@@ -56,12 +57,12 @@ export const GlobalStyled = createGlobalStyle`
   }
 
   h3 {
-font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-weight: 700;
     font-size: 16px;
     letter-spacing: 1px;
   }
-  
+
   p {
     font-weight: 400;
     font-size: 14px;
