@@ -17,22 +17,22 @@ export const Skills = () => {
                 <FlexWrapper wrap={"wrap"} justify={"space-between"}>
                     <Skill iconId={"code"}
                            title={"html5"}
-                           description={"html bla-bla"}/>
+                           description={"html"}/>
                     <Skill iconId={"css"}
                            title={"css"}
-                           description={"css bla-bla"}/>
+                           description={"css"}/>
                     <Skill iconId={"react"}
                            title={"react"}
-                           description={"react cool"}/>
+                           description={"react"}/>
                     <Skill iconId={"typeScript"}
                            title={"type script"}
-                           description={"typescript cool"}/>
+                           description={"typescript"}/>
                     <Skill iconId={"styledCompon"}
                            title={"styled components"}
-                           description={"styled ipsum"}/>
+                           description={"styled"}/>
                     <Skill iconId={"design"}
                            title={"web design"}
-                           description={"figma etc"}/>
+                           description={"figma"}/>
                 </FlexWrapper>
             </Container>
         </StyledSkills>

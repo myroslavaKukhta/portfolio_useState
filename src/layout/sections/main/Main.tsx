@@ -10,7 +10,7 @@ export const Main = () => {
     return (
         <StyledMain>
             <Container>
-                <FlexWrapper align={"center"} justify={"space-between"} wrap={"wrap"}>
+                <FlexWrapper align={"center"} justify={"space-around"} wrap={"wrap"}>
                     <div>
                         <Congrats>Hi There</Congrats>
                         <Name>I am <span>Myroslava Kukhta</span></Name>
@@ -32,15 +32,15 @@ const StyledMain = styled.section`
 `
 
 const PhotoWrapper = styled.div`
-position: relative;
+  position: relative;
   z-index: 1;
-  
+
   &::before {
     content: "";
     width: 270px;
     height: 300px;
     border: 5px solid ${theme.colors.accent};
-    
+
     position: absolute;
     top: -24px;
     left: 24px;
@@ -49,14 +49,22 @@ position: relative;
     @media ${theme.media.mobile} {
       width: 210px;
       height: 240px;
+      top: -17px;
+      left: 20px;
     }
   }
+
+  @media ${theme.media.mobile} {
+    margin-top: 65px;
+  }
+}
 `
 
 const StyledPhoto = styled.img`
   width: 270px;
   height: 300px;
   object-fit: cover;
+  margin-right: 20px;
 
   @media ${theme.media.mobile} {
     width: 220px;
@@ -75,7 +83,7 @@ const MainTitle = styled.h1`
 
 const Name = styled.h2`
   ${font({family: "'Josefin Sans', sans-serif", 
-    Fmax: 50, Fmin: 36,
+    Fmax: 60, Fmin: 56,
     weight: 700,
   })}
   letter-spacing: 0.05rem;
@@ -105,7 +113,7 @@ const Name = styled.h2`
 `
 
 const Congrats = styled.h2`
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
 `
 
