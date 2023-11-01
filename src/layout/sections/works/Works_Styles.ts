@@ -5,9 +5,11 @@ import {Link} from "../../../components/Link";
 import {StyledButton} from "../../../components/Button";
 
 const Works = styled.section`
-    ${FlexWrapper} {
-      gap: 30px;
-    }
+  position: relative;
+
+  ${FlexWrapper} {
+    gap: 30px;
+  }
 `
 
 const Work = styled.div`
@@ -35,7 +37,8 @@ const ImageWrapper = styled.div`
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -40%);
+    transition: ${theme.animations.transition};
 
     &::before {
       width: 100%;
@@ -50,9 +53,10 @@ const ImageWrapper = styled.div`
     right: 0;
     top: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(4px);
     opacity: 0;
+    transition: ${theme.animations.transition};
   }
 
   &:hover {
@@ -62,6 +66,7 @@ const ImageWrapper = styled.div`
 
     ${StyledButton} {
       opacity: 1;
+      transform: translate(-50%, 40%);
     }
   }
 

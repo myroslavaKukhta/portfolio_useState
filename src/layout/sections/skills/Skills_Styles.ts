@@ -38,8 +38,7 @@ position: relative;
   }
 `
 const Skills = styled.section`
-  background-color: cornflowerblue;
-  min-height: 100vh;
+  position: relative;
 `
 
 export const S = {
