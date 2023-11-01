@@ -50,12 +50,18 @@ const Photo = styled.img`
 `
 
 const MainTitle = styled.h1`
+  p {
+    display: none;
+  }
+  
   font-size: 30px;
   font-weight: 400;
   ${font({
     Fmax: 27, Fmin: 20,
     weight: 400,
 })}
+
+
 `
 
 const Name = styled.h2`
